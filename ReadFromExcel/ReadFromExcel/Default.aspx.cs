@@ -16,8 +16,8 @@ namespace ReadFromExcel
             if (!Page.IsPostBack)
             {
                 OleDbConnection oconn = null;
-                string FilePath = "C:\\dotnetmentors\\Products.xlsx";
-                oconn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + FilePath + ";Extended Properties=Excel 8.0");
+                string FilePath = "C:\geeksarray\Products.xlsx";
+                oconn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + FilePath + ";Extended Properties=Excel 8.0");
 
                 DataTable dtCategories = new DataTable();
                 oconn.Open();
@@ -53,8 +53,8 @@ namespace ReadFromExcel
             dtProducts.Columns.Add("Discontinued");
 
             OleDbConnection oconn = null;
-            string FilePath = "C:\\dotnetmentors\\Products.xlsx";
-            oconn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + FilePath + ";Extended Properties=Excel 8.0");
+            string FilePath = "C:\geeksarray\Products.xlsx";
+            oconn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + FilePath + ";Extended Properties=Excel 8.0");
             OleDbCommand ocmd = new OleDbCommand("select * from [" + ddlCategories.SelectedItem.Value + "$]", oconn);
 
             oconn.Open();
