@@ -11,6 +11,6 @@ All the sheet names will be shown in ASP.NET DropDownList control and on selecti
 1. [Default.aspx.cs](https://github.com/geeksarray/display-excel-data-in-web-page-using-aspnet-csharp/blob/master/ReadFromExcel/ReadFromExcel/Default.aspx.cs) - code behind file of web page. This reads content of excel.
 
 ## Your web page will have like
-![Excel content on ASP.NET Webpage GridView](http://dotnetmentors.com/Images/ProductDetails.png)
+![Excel content on ASP.NET Webpage GridView](https://geeksarray.com/images/blog/ProductDetails.png)
 
 For more details visit blog - https://geeksarray/blog/display-excel-data-in-web-page-using-aspnet-csharp
